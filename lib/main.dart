@@ -19,10 +19,10 @@ class _HomeState extends State<Home> {
   TextEditingController heightController = TextEditingController();
 
   void _resetFields() {
+    weightController.text = '';
+    heightController.text = '';
+    
     setState(() {
-      weightController.text = '';
-      heightController.text = '';
-
       this._resultText = 'Informe seus dados de peso e altura';
     });
   }
